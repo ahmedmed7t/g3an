@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nested_chiefImage"
+        android:layout_width="66dp"
+        android:layout_height="63dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/green_circle"
+        android:padding="4dp"
+        android:src="@drawable/person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nested_chiefName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medhat"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toEndOf="@id/nested_chiefImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="20dp"
+        android:layout_height="29dp"
+        android:src="@drawable/blankstar"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@id/nested_chiefName"
+        app:layout_constraintEnd_toStartOf="@id/star2"
+       />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="20dp"
+        android:layout_height="29dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintTop_toBottomOf="@id/nested_chiefName"
+        app:layout_constraintEnd_toStartOf="@id/star3"
+        />
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="20dp"
+        android:layout_height="29dp"
+        android:src="@drawable/blankstar"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@id/nested_chiefName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nested_chiefImage"
+        app:layout_constraintHorizontal_bias=".13"
+        />
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="20dp"
+        android:layout_height="29dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintTop_toBottomOf="@id/nested_chiefName"
+        app:layout_constraintStart_toEndOf="@id/star3"
+        />
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="20dp"
+        android:layout_height="29dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintTop_toBottomOf="@id/nested_chiefName"
+        app:layout_constraintStart_toEndOf="@id/star4"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/nested_item_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toBottomOf="@id/nested_chiefImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

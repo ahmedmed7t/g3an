@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Button
+        android:id="@+id/nested_x"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/green_circle"
+        android:textAlignment="center"
+        android:text="x"
+        android:textStyle="bold"
+        android:textColor="#c70834"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nested_plate_image"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <ImageView
+        android:id="@+id/nested_plate_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/image"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nested_x"/>
+
+    <TextView
+        android:id="@+id/nested_plate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="فطار مميز"
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nested_plate_image"
+
+        />
+
+    <TextView
+        android:id="@+id/nested_plate_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="31 جـ"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@id/nested_plate_image"
+        app:layout_constraintTop_toBottomOf="@id/nested_plate_name"
+
+        />
+
+    <TextView
+        android:id="@+id/nested_plate_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 د"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@id/nested_plate_image"
+        app:layout_constraintTop_toBottomOf="@id/nested_plate_price"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <Button
+            android:id="@+id/nested_minus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="-"
+            android:layout_margin="8dp"
+            android:background="@drawable/edit_text_green_border"/>
+
+        <TextView
+            android:id="@+id/nested_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_margin="8dp"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/nested_plus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="+"
+            android:layout_margin="8dp"
+            android:background="@drawable/edit_text_green_border"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

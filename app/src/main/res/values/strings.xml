@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">G3an</string>
+    <string name="username">User name</string>
+    <string name="user_email">E-mail</string>
+    <string name="user_pass">Password</string>
+    <string name="user_conf_pass">Confirm password</string>
+    <string name="user">User</string>
+    <string name="chief">Chief</string>
+    <string name="create_account">Create Account</string>
+    <string name="signup_with_face">Sign in with</string>
+    <string name="lets_start">Let\'s Start</string>
+    <string name="home_page_content">All your foods at same place</string>
+    <string name="login">Log In</string>
+    <string name="forget_pass">Forget Password ?</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="sent_password">Sent Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">291499144768312</string>
+    <string name="fb_login_protocol_scheme">fb291499144768312</string>
+    <string name="id">ID</string>
+    <string name="user_phone">Phone</string>
+    <string name="personal_image">Personal image</string>
+    <string name="personal_id">ID number</string>
+    <string name="next">Next</string>
+    <string name="noPhonePremission">There\'s no no permission to read phone number</string>
+    <string name="invalidmail">Please , enter valid e-mail</string>
+    <string name="invalidname">Please , enter valid name</string>
+    <string name="invalidpass">Please, enter valid password form 6 characters</string>
+    <string name="invalidPhone">Please, enter valid phone number</string>
+    <string name="invalidID">Please, enter valid id number</string>
+    <string name="write_a_comment">Write a comment...</string>
+    <string name="follow">+  follow</string>
+    <string name="Likes">Likes</string>
+    <string name="Following">Following</string>
+    <string name="unfollow">unfollow</string>
+    <string name="title_activity_post_details">post_details</string>
+    <string name="adressDetect"> Address </string>
+    <string name="building">building</string>
+    <string name="street">street</string>
+    <string name="region">region</string>
+    <string name="specialmark">special mark</string>
+    <string name="timeDetect">Time</string>
+    <string name="am">Am</string>
+    <string name="pm">Pm</string>
+    <string name="yourOrders">orders</string>
+
+</resources>

@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "totchi.g3an"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+}
+
+dependencies {
+    final RETROFIT_VERSION = '2.3.0'
+    final OKHTTP_VERISON = '3.10.0'
+    final DAGGER_VERSION = '2.10'
+    final BUTTERKNIFE_VERSION = '8.8.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-fragment:27.1.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    compile 'com.google.android.gms:play-services:11.4.0'
+
+
+    compile 'com.facebook.android:facebook-android-sdk:4.26.0'
+
+    //mutlidex
+    compile 'com.android.support:multidex:1.0.3'
+
+    //butterknife
+    compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+
+    //rxJava2
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+
+    //retrofit2
+    compile "com.squareup.retrofit2:adapter-rxjava2:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+
+    //GSON
+    compile 'com.google.code.gson:gson:2.8.2'
+
+    //okhttp
+    implementation "com.squareup.okhttp3:okhttp:$OKHTTP_VERISON"
+    implementation "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERISON"
+
+    //Dagger2
+    compile "com.google.dagger:dagger:$DAGGER_VERSION"
+    annotationProcessor "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
+
+    //picasso for lazyloading
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'id.zelory:compressor:2.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //recyclerview
+    compile 'com.android.support:recyclerview-v7:27.1.1'
+
+    //date picker
+    compile 'co.infinum:materialdatetimepicker-support:3.5.1'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+}

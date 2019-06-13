@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="totchi.g3an.ui.chiefNotificationDetails.NotificationDetailsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ND_userImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/person"
+        android:background="@drawable/green_circle"
+        android:padding="6dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/DN_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medhat"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ND_userImage"/>
+
+    <ImageView
+        android:id="@+id/DN_star1"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintTop_toBottomOf="@id/DN_userName"
+        app:layout_constraintEnd_toStartOf="@id/DN_star2"/>
+
+    <ImageView
+        android:id="@+id/DN_star2"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintTop_toBottomOf="@id/DN_userName"
+        app:layout_constraintEnd_toStartOf="@id/DN_star3"/>
+
+    <ImageView
+        android:id="@+id/DN_star3"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toEndOf="@id/ND_userImage"
+        app:layout_constraintTop_toBottomOf="@id/DN_userName" />
+    <ImageView
+        android:id="@+id/DN_star4"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintTop_toBottomOf="@id/DN_userName"
+        app:layout_constraintStart_toEndOf="@id/DN_star3"/>
+    <ImageView
+        android:id="@+id/DN_star5"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/blankstar"
+        app:layout_constraintTop_toBottomOf="@id/DN_userName"
+        app:layout_constraintStart_toEndOf="@id/DN_star4"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/DN_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/ND_userImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/DN_txt_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/DN_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:text="ملاحظات"/>
+
+    <TextView
+        android:id="@+id/DN_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/DN_txt_note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="no salt"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="4dp"
+        android:background="@drawable/black_border"/>
+
+    <Button
+        android:id="@+id/DN_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/green_button"
+        android:text="تأكيد"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DN_note"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+</android.support.constraint.ConstraintLayout>

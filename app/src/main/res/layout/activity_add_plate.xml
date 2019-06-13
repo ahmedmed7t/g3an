@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="totchi.g3an.ui.addPlate.addPlateActivity">
+
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/camera"
+       android:layout_width="150dp"
+       android:layout_height="130dp"
+       android:layout_marginTop="45dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/iconcamer"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:onClick="getImage"/>
+
+   <Spinner
+       android:id="@+id/spinner_category"
+       android:layout_width="match_parent"
+       android:layout_height="20dp"
+       android:layout_marginTop="25dp"
+       android:layout_marginRight="12dp"
+       android:layout_marginLeft="12dp"
+       android:background="@drawable/spinnerbackground"
+       app:layout_constraintTop_toBottomOf="@id/camera"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       >
+   </Spinner>
+
+   <EditText
+       android:id="@+id/edit_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/spinner_category"
+       android:background="@drawable/black_border"
+       android:layout_marginTop="25dp"
+       android:layout_marginRight="12dp"
+       android:layout_marginLeft="12dp"
+       android:hint="Name"
+       android:padding="4dp"
+       />
+
+   <LinearLayout
+       android:id="@+id/linearLayoutPrice"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/edit_name"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginTop="25dp"
+       android:layout_marginRight="12dp"
+       android:layout_marginLeft="12dp">
+      <EditText
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/black_border"
+          android:hint="price"
+          android:layout_marginRight="8dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="L.E"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linearLayoutTime"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/linearLayoutPrice"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginTop="25dp"
+       android:layout_marginRight="12dp"
+       android:layout_marginLeft="12dp">
+      <EditText
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/black_border"
+          android:hint="Time"
+          android:layout_marginRight="8dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="m"/>
+   </LinearLayout>
+
+
+   <Button
+       android:layout_width="170dp"
+       android:layout_height="40dp"
+       android:background="@drawable/green_button"
+       android:text="Post"
+       android:textColor="@color/white"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintVertical_bias=".8"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       />
+
+</android.support.constraint.ConstraintLayout>

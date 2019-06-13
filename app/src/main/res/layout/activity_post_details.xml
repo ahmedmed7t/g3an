@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cont"
+    android:scrollbars="vertical"
+    tools:context="totchi.g3an.ui.post_details.post_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+       >
+
+        <android.support.constraint.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+
+        <ImageView
+            android:id="@+id/plate_image"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_plateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="فطار مميز "
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/plate_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/plate_image"
+            app:layout_constraintVertical_bias="0.309" />
+
+        <TextView
+            android:id="@+id/details_platePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="جـ 30"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/plate_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.943"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/plate_image"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/clock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/details_plateTime"
+            app:layout_constraintTop_toBottomOf="@id/details_platePrice"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/details_plateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="8dp"
+            android:text="د 50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_platePrice"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/details_cart"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/shoopingcart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.926"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_plateTime"
+            android:onClick="onclick"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/details_chiefImage"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/green_circle"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person"
+            app:layout_constraintBottom_toBottomOf="@id/plate_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/plate_image"
+            app:layout_constraintVertical_bias="0.353" />
+
+        <TextView
+            android:id="@+id/details_chiefName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="83dp"
+            android:fontFamily="@font/arlrdbd"
+            android:text="Ahmed Medhat"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plate_image" />
+
+        <ImageView
+            android:id="@+id/details_star1"
+            android:layout_width="20dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/blankstar"
+            android:layout_marginStart="20dp"
+            app:layout_constraintHorizontal_bias="0.641"
+            app:layout_constraintStart_toEndOf="@id/details_star3"
+            app:layout_constraintTop_toBottomOf="@id/details_chiefName"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:id="@+id/details_star2"
+            android:layout_width="20dp"
+            android:layout_height="29dp"
+            android:src="@drawable/blankstar"
+            app:layout_constraintStart_toEndOf="@+id/details_star3"
+            app:layout_constraintTop_toBottomOf="@id/details_chiefName" />
+
+            <ImageView
+                android:id="@+id/details_star3"
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:src="@drawable/blankstar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/details_chiefName" />
+
+            <ImageView
+                android:id="@+id/details_star4"
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="36dp"
+                android:src="@drawable/blankstar"
+                app:layout_constraintEnd_toStartOf="@id/details_star3"
+                app:layout_constraintTop_toBottomOf="@id/details_chiefName"
+                android:layout_marginLeft="36dp" />
+
+            <ImageView
+                android:id="@+id/details_star5"
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/blankstar"
+                app:layout_constraintEnd_toStartOf="@id/details_star3"
+                app:layout_constraintTop_toBottomOf="@id/details_chiefName"
+                android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/love"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_chiefName" />
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="55dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_chiefImage"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_chiefName"
+            app:layout_constraintVertical_bias="0.060000002" />
+
+        <TextView
+            android:id="@+id/details_loveNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:text="32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/love" />
+
+        <TextView
+            android:id="@+id/details_commentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:text="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.577"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_chiefName"
+            app:layout_constraintVertical_bias="0.14999998" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/droidsansarabic"
+            android:text="وصف الوجبة"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_commentNumber"
+            app:layout_constraintVertical_bias="0.04000002" />
+
+        <TextView
+            android:id="@+id/details_notes"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/black_border"
+            android:padding="3dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_desc"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/droidsansarabic"
+            android:text="ملاحظاتك"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_notes"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/details_added_notes"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/black_border"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_note"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_added_notes"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/black_border"
+                android:hint="@string/write_a_comment"
+                app:layout_constraintTop_toBottomOf="@+id/txt_comm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+         </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
